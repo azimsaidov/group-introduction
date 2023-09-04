@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    
+}
+
+body{
+    background-color: white;
+}
+
+.card-group{
+    
+    max-width: 1260px;
+    display: flex;
+    column-gap: 16px;
+    padding: 50px;
+    overflow-x: scroll;
+
+}
+
+.card{
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    background-color: #b2bbc4;
+    padding: 19px;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    transition: transform 250ms;
+}
+
+.head{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f546c;
+ 
+
+}
+
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f546c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #b2bbc4;
+    border-radius: 5%;
+    display: flex;
+}
+
+.card-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #3f546c;
+}
+
+.card::not(:first-child) {
+    margin-left: -100px;
+
+}
+
+.card:hover{
+    transform: translate(-8px, -14px) rotate(3deg);
+    cursor: pointer;
+
+}
+.card:hover ~ .card{
+    transform: translate(100px);
+    
+}
